@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Alert!</title>
+    <style>
+        body {
+            background-color: black;
+            color: red;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .warning {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+        .scan {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .loading {
+            font-size: 18px;
+            margin-top: 10px;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="warning">⚠️ WARNING: HACKER DETECTED ⚠️</h1>
+    <p class="scan">Scanning your device for illegal activities...</p>
+    <p class="loading">🔍 Scanning...</p>
+    <script>
+        setTimeout(() => {
+            document.body.innerHTML = `<h1 class='warning'>🚨 YOUR DEVICE IS NOW UNDER SURVEILLANCE 🚨</h1>
+            <p class='scan'>Your IP and location have been recorded!</p>
+            <p class='scan'>If you are involved in scams, legal action will be taken!</p>`;
+        }, 5000);
+    </script>
+</body>
+</html>
